@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/test",
+    "pages/search/search",
+    "pages/newsList/newsList",
+    "pages/detail/detail",
+    "pages/detail-search/detail",
+    "pages/detail-post/detail",
+    "pages/school/school",
+    "pages/school/school-items/school-items",
+    "pages/consult/consult",
+    "pages/case/case",
+    "pages/videos/videos",
+    "pages/videoslist/videoslist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00193e",
+    "navigationBarTitleText": "法国红领巾",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#00193e",
+    "color": "#676767",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/tabBar/list1.png",
+        "selectedIconPath": "pages/images/tabBar/list1s.png"
+      },
+      {
+        "pagePath": "pages/newsList/newsList",
+        "text": "攻略",
+        "iconPath": "pages/images/tabBar/list5.png",
+        "selectedIconPath": "pages/images/tabBar/list5s.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测评",
+        "iconPath": "pages/images/tabBar/list2.png",
+        "selectedIconPath": "pages/images/tabBar/list2s.png"
+      },
+      {
+        "pagePath": "pages/consult/consult",
+        "text": "咨询",
+        "iconPath": "pages/images/tabBar/list3.png",
+        "selectedIconPath": "pages/images/tabBar/list3s.png"
+      },
+      {
+        "pagePath": "pages/school/school",
+        "text": "学校",
+        "iconPath": "pages/images/tabBar/list4.png",
+        "selectedIconPath": "pages/images/tabBar/list4s.png"
+      }
+    ]
+  }
+}
