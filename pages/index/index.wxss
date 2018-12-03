@@ -1,0 +1,419 @@
+/**index.wxss**/
+@import '../../pages/newsList/newsList.wxss';
+
+.index {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  background-color: #00193e;
+  height: 130rpx;
+}
+
+.top1 {
+  width: 94%;
+  background-color: white;
+  position: relative;
+  bottom: 120rpx;
+  height: 220rpx;
+  margin: 0 3%;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+}
+
+.icon {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin: 25rpx 35rpx;
+}
+
+.top1-text1 {
+  font-weight: bold;
+  color: #06294e;
+  font-size: 40rpx;
+  vertical-align: middle;
+}
+
+.top1-text2 {
+  color: #676767;
+  margin: 5rpx 35rpx 0;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  letter-spacing: 1px;
+}
+
+.top1-text2 text {
+  font-size: 30rpx;
+  color: #00193e;
+  font-weight: bold;
+  float: right;
+}
+
+.swiper {
+  width: 94%;
+  background-color: white;
+  height: 350rpx;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+  position: relative;
+  bottom: 90rpx;
+}
+
+swiper {
+  width: 100%;
+  height: 350rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 350rpx;
+}
+
+.contact {
+  width: 94%;
+  background-color: white;
+  height: 180rpx;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+  position: relative;
+  bottom: 60rpx;
+}
+
+.contact-bottom {
+  border-bottom: 1px solid #f3f3f3;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.contact-bottom1 {
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-se1 {
+  width: 8rpx;
+  height: 40rpx;
+  background-color: #00193e;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+
+.contact-se2 {
+  width: 8rpx;
+  height: 40rpx;
+  background-color: #00193e;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+
+.contact-se1-text1 {
+  font-size: 30rpx;
+  vertical-align: middle;
+  float: right;
+  font-weight: bold;
+}
+
+.contact-se1-text1-phone {
+  font-size: 30rpx;
+  vertical-align: middle;
+  float: right;
+}
+
+.contact-1 {
+  width: 200rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-2 {
+  vertical-align: middle;
+  width: 480rpx;
+  height: 50rpx;
+  color: #676767;
+}
+
+.contact-se1-text2 {
+  font-size: 30rpx;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.contact-se1-text2-wechat {
+  font-size: 30rpx;
+  vertical-align: middle;
+  float: right;
+}
+
+.service {
+  width: 94%;
+  background-color: white;
+  height: 250rpx;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+  position: relative;
+  bottom: 30rpx;
+}
+
+.service-company {
+  height: 90rpx;
+  border-bottom: 1px solid #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.service-text {
+  font-size: 30rpx;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.service-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service-list {
+  height: 155rpx;
+  width: 92%;
+}
+
+.company-case {
+  width: 94%;
+  background-color: white;
+  height: 757rpx;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+  position: relative;
+  top: 30rpx;
+}
+
+.company-case-image {
+  height: 667rpx;
+  width: 708rpx;
+}
+
+.company-case-top {
+  height: 90rpx;
+  border-bottom: 1px solid #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.company-introduce {
+  width: 94%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+}
+
+.Customer {
+  position: fixed;
+  left: 650rpx;
+  top: 1000rpx;
+  width: 40rpx;
+  height: 60rpx;
+  border-radius: 100%;
+}
+
+.company-introduce-container {
+  width: 100%;
+  text-align: justify;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.company-introduce-image {
+  width: 660rpx;
+  height: 275rpx;
+}
+
+.company-introduce-text {
+  color: #666;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.videos {
+  width: 94%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+  position: relative;
+  top: 60rpx;
+}
+
+.news {
+  width: 94%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3%;
+  position: relative;
+  top: 90rpx;
+}
+
+.news-more {
+  vertical-align: middle;
+  width: 520rpx;
+  height: 40rpx;
+}
+
+.news-more1 {
+  font-size: 30rpx;
+  font-weight: bold;
+  vertical-align: middle;
+  float: right;
+}
+
+.news-list-li {
+  border-bottom: 1px solid #f3f3f3;
+  height: 205rpx;
+}
+
+.news-li-time {
+  color: #d2d2d5;
+}
+
+.news-li-icon {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.news-li-time1 {
+  vertical-align: middle;
+  margin-left: 15rpx;
+  font-size: 25rpx;
+}
+
+.news-li-img {
+  width: 220rpx;
+  height: 140rpx;
+}
+
+.news-list-left {
+  width: 59%;
+  float: left;
+  margin: 30rpx 0 0 30rpx;
+}
+
+.news-list-right {
+  float: right;
+  margin: 30rpx 30rpx 0 0;
+}
+
+.news-li-title {
+  font-size: 32rpx;
+  height: 100rpx;
+}
+
+.contact-right image {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.contact-right-connect {
+  position: fixed;
+  right: 51rpx;
+  bottom: 93px;
+  font-size: 20rpx;
+  color: #00193e;
+}
+
+.company-case-tap1 {
+  width: 220rpx;
+  height: 300rpx;
+  background-color: red;
+  position: absolute;
+  top: 90rpx;
+  left: 15rpx;
+  opacity: 0;
+}
+
+.company-case-tap2 {
+  width: 220rpx;
+  height: 300rpx;
+  background-color: red;
+  position: absolute;
+  top: 90rpx;
+  left: 240rpx;
+  opacity: 0;
+}
+
+.company-case-tap3 {
+  width: 220rpx;
+  height: 300rpx;
+  background-color: red;
+  position: absolute;
+  top: 90rpx;
+  left: 465rpx;
+  opacity: 0;
+}
+
+.company-case-tap4 {
+  width: 220rpx;
+  height: 300rpx;
+  background-color: red;
+  position: absolute;
+  top: 428rpx;
+  left: 15rpx;
+  opacity: 0;
+}
+
+.company-case-tap5 {
+  width: 220rpx;
+  height: 300rpx;
+  background-color: red;
+  position: absolute;
+  top: 428rpx;
+  left: 240rpx;
+  opacity: 0;
+}
+
+.company-case-tap6 {
+  width: 220rpx;
+  height: 300rpx;
+  background-color: red;
+  position: absolute;
+  top: 428rpx;
+  left: 465rpx;
+  opacity: 0;
+}
+
+.advantage {
+  width: 94%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  border-radius: 4px;
+  margin: 0 3% 3%;
+  position: relative;
+  top: 120rpx;
+}
+
+.advantage image {
+  height: 2698rpx;
+  width: 100%;
+}

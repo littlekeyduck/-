@@ -1,0 +1,31 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='container1'>
+  <image class='top-image' src="{{detail.pic}}"></image>
+  <text class='title'>{{detail.title}}</text>
+  <view class='bg1'>
+    <image class='head-image' src='../../pages/images/icon/jifa.jpg'></image>
+    <text class='detail-name'>红领巾法语</text>
+    <text class='detail-time'>{{detail.create_time}}</text>
+  </view>
+  <view class='content'>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+  </view>
+</view>
+<view class='buttonall'>
+  <button bindtap='seemoremessage' class='seemore-message'>
+    查看更多>重要资讯
+  </button>
+  <button class='seemore-message1' open-type="share">
+    立即转发>分享好友
+  </button>
+  <button bindtap='backhome' class='seemore-message2'>
+    回到首页>了解更多
+  </button>
+  <button bindtap='test' class='seemore-message2'>
+    立即开始测评
+  </button>
+</view>
+
+<button open-type="contact" class='button'>
+  如需申请留学，请点击咨询
+</button>

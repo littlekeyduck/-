@@ -1,0 +1,66 @@
+/* pages/test/test.wxss */
+
+page {
+  background-color: #f3f3f3;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form view {
+  width: 700rpx;
+  height: 60rpx;
+  margin-top: 30rpx;
+  background-color: white;
+  font-size: 28rpx;
+  border-radius: 5px;
+}
+
+.pingcebiao {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #4e4e4e;
+  margin-top: 10rpx;
+}
+
+.form button {
+  height: 60rpx;
+  width: 200rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  background-color: white;
+  margin-bottom: 30rpx;
+}
+
+.form text {
+  font-size: 28rpx;
+  background-color: white;
+  height: 60rpx;
+  float: left;
+  line-height: 60rpx;
+  border-radius: 5px;
+  text-indent: 10px;
+}
+
+.input {
+  height: 60rpx;
+}
+
+.form picker {
+  line-height: 60rpx;
+  text-indent: 10px;
+}
+
+.shuoming {
+  height: 200rpx;
+  width: 660rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  padding: 20rpx;
+  border-radius: 5px;
+}

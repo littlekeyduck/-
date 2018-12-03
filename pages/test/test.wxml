@@ -1,0 +1,31 @@
+<view>
+  <image style='width:750rpx; height:340rpx;' src='../../pages/images/form.jpg'></image>
+</view>
+<text class='pingcebiao'>评测表</text>
+<form class='form' bindsubmit='formSubmit' report-submit>
+  <view>
+    <text>姓名*：</text>
+    <input value="{{reset}}" class='input' name="name" placeholder='必填'></input>
+  </view>
+  <view>
+    <text>电话*：</text>
+    <input value="{{reset}}" class='input' name="phone" placeholder='必填'></input>
+  </view>
+  <view>
+    <text>微信或者QQ*：</text>
+    <input value="{{reset}}" class='input' name="wechat" placeholder='必填'></input>
+  </view>
+  <view>
+    <text>留学意向专业*：</text>
+    <input value="{{reset}}" class='input' name="abroadmajor" placeholder='必填'></input>
+  </view>
+  <view>
+    <text>在读(毕业)院校*：</text>
+    <input value="{{reset}}" class='input' name="finishschool" placeholder='必填'></input>
+  </view>
+  <picker name="finishtime" mode="date" value="{{date}}" start="2000-09-01" end="2080-09-01" bindchange="bindDateChange">
+    <view>毕业时间*：{{date}}</view>
+  </picker>
+  <textarea value="{{reset}}" class='shuoming' name="shuoming" placeholder='个人情况说明：'></textarea>
+  <button formType="submit">提交</button>
+</form>

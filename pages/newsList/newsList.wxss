@@ -1,0 +1,93 @@
+/* pages/newsList/newsList.wxss */
+
+/* @import '../index/index.wxss'; */
+
+.news {
+  width: 94%;
+  background-color: white;
+  border-radius: 4px;
+  margin: 2% 3%;
+  box-shadow: 0px 0px 5px 0px #e0e0e0;
+}
+
+.contact-se1 {
+  width: 8rpx;
+  height: 40rpx;
+  background-color: #00193e;
+  vertical-align: middle;
+  margin-right: 25rpx;
+}
+
+.company-case-top {
+  height: 90rpx;
+  border-bottom: 1px solid #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.service-text {
+  font-size: 30rpx;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.news-list-li {
+  border-bottom: 1px solid #f3f3f3;
+  height: 205rpx;
+}
+
+.news-li-time {
+  color: #d2d2d5;
+}
+
+.news-li-icon {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.news-li-time1 {
+  vertical-align: middle;
+  margin-left: 15rpx;
+  font-size: 25rpx;
+}
+
+.news-li-img {
+  width: 220rpx;
+  height: 140rpx;
+}
+
+.news-list-left {
+  width: 59%;
+  float: left;
+  margin: 30rpx 0 0 30rpx;
+}
+
+.news-list-right {
+  float: right;
+  margin: 30rpx 30rpx 0 0;
+}
+
+.news-li-title {
+  font-size: 32rpx;
+  height: 100rpx;
+}
+
+.search-icon {
+  float: left;
+  margin-top: 22rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+}
+
+.search-input {
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+}
+
+.search-input input {
+  line-height: 32rpx;
+  font-size: 32rpx;
+  height: 80rpx;
+}

@@ -1,0 +1,116 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: 0 3%;
+  padding: 3% 0 3% 0;
+}
+
+.top-image {
+  width: 100%;
+  height: 180px;
+}
+
+.title {
+  font-size: 46rpx;
+  line-height: 70rpx;
+  text-align: justify;
+  margin-top: 20rpx;
+}
+
+.buttonall {
+  margin-bottom: 55px;
+}
+
+.seemore-message {
+  width: 60%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #00193e;
+}
+
+.seemore-message1 {
+  width: 60%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #00193e;
+  margin-top: 20rpx;
+}
+
+.seemore-message2 {
+  margin-top: 20rpx;
+  width: 60%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #00193e;
+}
+
+.seemore-message1::after {
+  border: none;
+}
+
+.bg1 {
+  margin-top: 20rpx;
+}
+
+.head-image {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.detail-name {
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  color: #d2d2d5;
+}
+
+.detail-time {
+  font-size: 25rpx;
+  color: #d2d2d5;
+  margin-left: 30rpx;
+}
+
+.content {
+  font-size: 32rpx;
+  text-align: justify;
+  margin-top: 30rpx;
+  letter-spacing: 0rpx;
+  line-height: 45rpx;
+}
+
+.content image {
+  width: 100%;
+  height: 300rpx;
+  margin: 15px 0;
+}
+
+.seemore-message2::after {
+  border: none;
+}
+
+.button {
+  height: 80rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #00193e;
+  color: white;
+  font-size: 28rpx;
+  left: 0;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.button::after {
+  border: none;
+}
+
+.seemore-message::after {
+  border: none;
+}

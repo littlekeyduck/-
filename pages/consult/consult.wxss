@@ -1,0 +1,22 @@
+/* pages/consult/consult.wxss */
+.consult{
+  width: 100%;
+  height: 1701px;
+  margin-bottom: 50rpx;
+}
+.button{
+  height: 80rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #00193e;
+  color: white;
+  font-size: 28rpx;
+  left: 0;
+  line-height: 80rpx;
+  display: flex; 
+  justify-content: center;
+}
+ .button::after {
+  border: none;
+} 

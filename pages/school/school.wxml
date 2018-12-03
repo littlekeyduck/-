@@ -1,0 +1,24 @@
+<template name="newsList">
+  <view class='news-list-li'>
+    <view class='news-list-left'>
+      <view class='news-li-title'>{{title}}
+        <view class='new-li-desc'>{{desc}}....</view>
+      </view>
+    </view>
+    <view class='news-list-right'>
+      <image src='{{pic}}' class='news-li-img'></image>
+      <view class='news-right-seemore'>查看详情</view>
+    </view>
+  </view>
+</template>
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" style="height:{{scrollHeight}}px;">
+  <view class="news">
+    <view class='company-case-top'>
+      <text class='service-text'>法国大学</text>
+    </view>
+
+    <view wx:for="{{detail}}" catchtap='seeschool' data-postid="{{index}}">
+      <template is="newsList" data="{{...item}}" />
+    </view>
+  </view>
+</scroll-view>

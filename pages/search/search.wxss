@@ -1,0 +1,31 @@
+/* pages/search/search.wxss */
+@import '../../pages/newsList/newsList.wxss';
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-input {
+  border: 1px solid #d0d0d0;
+  /* border-radius: 4px; */
+  float: left;
+  width: 90%;
+  height: 90rpx;
+}
+
+.search-input input {
+  line-height: 32rpx;
+  font-size: 32rpx;
+  height: 90rpx;
+  margin-left: 20rpx;
+}
+
+.icon-bg {
+  height: 90rpx;
+  width: 90rpx;
+  border: 1px solid #d0d0d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

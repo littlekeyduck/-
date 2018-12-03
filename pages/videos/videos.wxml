@@ -1,0 +1,23 @@
+<view class='container1'>
+  <!-- <image class='top-image' src="{{videos.pic}}"></image> -->
+  <text class='title'>{{videos.title}}</text>
+  <view class='bg1'>
+    <image class='head-image' src='../../pages/images/icon/jifa.jpg'></image>
+    <text class='detail-name'>红领巾法语</text>
+    <text class='detail-time'>{{videos.create_time}}</text>
+  </view>
+  <video class="videos" src="{{url}}"></video>
+  <text class='videos-desc'>{{videos.seo_title}}</text>
+</view>
+<button bindtap='seemorevideo' class='seemore-message'>
+  查看更多>教学视频
+</button>
+<button class='seemore-message1' open-type="share">
+  立即转发>分享好友
+</button>
+<button bindtap='backhome' class='seemore-message2'>
+  回到首页>了解更多
+</button>
+<button open-type="contact" class='button'>
+  如需申请留学，请点击咨询
+</button>

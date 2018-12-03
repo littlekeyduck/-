@@ -1,0 +1,21 @@
+<import src="../../../wxParse/wxParse.wxml" />
+
+<view class='container1'>
+  <view class='top-image'>
+    <image class='top-image' src="{{detail.pic}}"></image>
+  </view>
+  <image style="height:50rpx;width:100%;align-items:center;" src='../../../pages/images/school/jianjie.jpg'></image>
+  <view class='border'>
+    <text class='title'>{{detail.title}}</text>
+    <view class='desc'>
+      <template is="wxParse" data="{{wxParseData:desc.nodes}}" />
+    </view>
+  </view>
+  <image class='xiangqing-top' style="height:50rpx;width:100%;align-items:center;" src='../../../pages/images/school/xiangqing.jpg'></image>
+  <view class='content'>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+  </view>
+
+</view>
+
+<button class='button' open-type="contact">立即咨询</button>

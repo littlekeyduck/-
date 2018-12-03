@@ -1,0 +1,30 @@
+<!-- 视频模板 -->
+<template name="videos">
+  <view class='news-list-li'>
+    <view class='news-list-left'>
+      <view class='news-li-title'>{{title}}</view>
+      <view class='news-li-time'>
+        <image src='../../pages/images/re.png' class='news-li-icon'></image>
+        <text class='news-li-time1'>{{create_time}}</text>
+      </view>
+    </view>
+    <view class='news-list-right'>
+      <image src='{{pic}}' class='news-li-img'></image>
+    </view>
+  </view>
+</template>
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower" style="height:{{scrollHeight}}px;">
+  <view class='videos'>
+    <view class='company-case-top'>
+      <image class='contact-se1'></image>
+      <text class='service-text'>法语课程</text>
+    </view>
+    <!-- 循环视频 -->
+    <block>
+      <view wx:for="{{detail}}" data-getpid="{{index}}" catchtap='openVideos' wx:key="">
+        <template is="videos" data="{{...item}}" />
+      </view>
+    </block>
+
+  </view>
+</scroll-view>

@@ -1,0 +1,5 @@
+<!-- <image src="{{case.content}}"></image> -->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='case'>
+  <image mode='widthFix' src='{{case.pic}}'></image>
+</view>

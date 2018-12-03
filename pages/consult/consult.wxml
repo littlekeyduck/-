@@ -1,0 +1,6 @@
+<view>
+  <image class="consult" src='{{aboutus.pic}}'></image>
+  <button open-type="contact" class='button'>
+    立即咨询
+  </button>
+</view>

@@ -1,0 +1,29 @@
+<view class='top'>
+  <view class='search-input'>
+    <input type='text' placeholder="请输入你想要的内容" value="{{searchValue}}" bindinput="searchValueInput" bindconfirm='suo' focus></input>
+  </view>
+  <view class='icon-bg' bindtap="suo">
+    <icon size='18' type='search'></icon>
+  </view>
+</view>
+
+<template name="newsList">
+  <view class='news-list-li'>
+    <view class='news-list-left'>
+      <view class='news-li-title'>{{title}}</view>
+      <view class='news-li-time'>
+        <image src='../../pages/images/re.png' class='news-li-icon'></image>
+        <text class='news-li-time1'>{{create_time}}</text>
+      </view>
+    </view>
+    <view class='news-list-right'>
+      <image src='{{pic}}' class='news-li-img'></image>
+    </view>
+  </view>
+</template>
+
+<block>
+  <view wx:for="{{detail}}" catchtap='onPostTap' data-postid="{{index}}" wx:key="">
+    <template is="newsList" data="{{...item}}" />
+  </view>
+</block>

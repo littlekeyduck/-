@@ -1,0 +1,157 @@
+<!--index.wxml-->
+<view class="index">
+  <view>
+    <view class='top'></view>
+    <view class='top1'>
+      <image class='icon' src='../../pages/images/icon/logo.png'></image>
+      <text class='top1-text1'>法国红领巾</text>
+      <view class='top1-text2'>专注法国留学、法语培训以及机经应试
+        <!-- <text bindtap='getLocation'>点击导航</text>   -->
+      </view>
+    </view>
+  </view>
+  <view class='swiper'>
+    <swiper indicator-dots="{{true}}" interval="{{3000}}" autoplay="{{true}}" duration="{{1000}}">
+      <block wx:for="{{info}}" wx:key="{{index}}">
+        <swiper-item>
+          <image data-getpostid="{{index}}" bindtap='onSwiperItemTap' src="{{item.pic}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='contact'>
+    <view class='contact-bottom' catchtap='onPhone'>
+      <view class='contact-1'>
+        <image class='contact-se1'></image>
+        <text class='contact-se1-text1'>立即联系：</text>
+      </view>
+      <view class='contact-2'>
+        <text class='contact-se1-text1-phone'>{{phone}} ></text>
+      </view>
+    </view>
+    <view class='contact-bottom1'>
+      <view class='contact-1'>
+        <image class='contact-se2'></image>
+        <text class='contact-se1-text2'>联系微信：</text>
+      </view>
+      <view class='contact-2'>
+        <text bindtap='copyweixin' selectable='true' class='contact-se1-text2-wechat'>{{weixin}} ＞</text>
+      </view>
+    </view>
+  </view>
+  <view class='service'>
+    <view class='service-company'>
+      <image class='contact-se1'></image>
+      <text class='service-text'>公司服务</text>
+    </view>
+    <view class='service-list-container'>
+      <image class='service-list' src='{{service[0].pic}}'></image>
+    </view>
+  </view>
+
+  <view class='company-introduce'>
+    <view class='company-case-top'>
+      <image class='contact-se1'></image>
+      <text class='service-text'>关于公司</text>
+    </view>
+    <view class='company-introduce-container'>
+      <image class='company-introduce-image' src='../../pages/images/company-introduce.jpg'></image>
+      <text class='company-introduce-text'>{{introduce}}</text>
+    </view>
+  </view>
+
+  <view class='company-case'>
+    <view class='company-case-top'>
+      <image class='contact-se1'></image>
+      <text class='service-text'>成功案例</text>
+    </view>
+    <image mode='aspectFit' class='company-case-image' src='{{allcase}}'></image>
+    <view data-case='0' class='company-case-tap1' bindtap='openCase'></view>
+    <view data-case='1' class='company-case-tap2' bindtap='openCase'></view>
+    <view data-case='2' class='company-case-tap3' bindtap='openCase'></view>
+    <view data-case='3' class='company-case-tap4' bindtap='openCase'></view>
+    <view data-case='4' class='company-case-tap5' bindtap='openCase'></view>
+    <view data-case='5' class='company-case-tap6' bindtap='openCase'></view>
+  </view>
+
+  <template name="newsList">
+    <view class='news-list-li'>
+      <view class='news-list-left'>
+        <view class='news-li-title'>{{title}}</view>
+        <view class='news-li-time'>
+          <image src='../../pages/images/re.png' class='news-li-icon'></image>
+          <text class='news-li-time1'>{{create_time}}</text>
+        </view>
+      </view>
+      <view class='news-list-right'>
+        <image src='{{pic}}' class='news-li-img'></image>
+      </view>
+    </view>
+  </template>
+  <!-- 视频模板 -->
+  <template name="videos">
+    <view class='news-list-li'>
+      <view class='news-list-left'>
+        <view class='news-li-title'>{{title}}</view>
+        <view class='news-li-time'>
+          <image src='../../pages/images/re.png' class='news-li-icon'></image>
+          <text class='news-li-time1'>{{create_time}}</text>
+        </view>
+      </view>
+      <view class='news-list-right'>
+        <image src='{{pic}}' class='news-li-img'></image>
+      </view>
+    </view>
+  </template>
+  <!-- 循环视频 -->
+  <view class='videos'>
+
+    <view class='company-case-top'>
+      <image class='contact-se1'></image>
+      <text class='service-text'>法语课程</text>
+      <view class='news-more'>
+        <text bindtap='seemorevideos' class='news-more1'>查看更多</text>
+      </view>
+    </view>
+
+    <block>
+      <view wx:for="{{videos}}" data-getpid="{{index}}" catchtap='openVideos' wx:key="">
+        <template is="videos" data="{{...item}}" />
+      </view>
+    </block>
+
+  </view>
+  <view class='news'>
+    <view class='company-case-top'>
+      <image class='contact-se1'></image>
+      <text class='service-text'>最新资讯</text>
+      <view class='news-more'>
+        <text bindtap='seemore' class='news-more1'>查看更多</text>
+      </view>
+    </view>
+
+    <view class='search-input' bindtap="suo">
+      <icon class="search-icon" size='18' type='search'></icon>
+      <input disabled placeholder="请输入关键字进行搜索" value="{{searchValue}}">
+      </input>
+    </view>
+
+    <block>
+      <view wx:for="{{article}}" data-getpid="{{index}}" catchtap='openArticle' wx:key="">
+        <template is="newsList" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+  <!-- 公司资质介绍 -->
+  <!-- <view class='advantage'>
+    <image src='../../pages/images/advantage.jpg'></image>
+  </view> -->
+
+  <view>
+
+  </view>
+</view>
+<button class='contact-right' open-type='contact'>
+  <image src='/pages/images/icon-contact.png'></image>
+  <view class='contact-right-connect' open-type='contact'>客服</view>
+</button>
